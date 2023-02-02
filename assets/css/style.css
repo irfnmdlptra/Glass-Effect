@@ -12,7 +12,7 @@ body{
 }
 
 .container {
-    height: 1021vh; width: 100%;
+  height: 100vh; width: 100%;
     position: relative;
     background: #000;
 }
@@ -23,9 +23,8 @@ body{
     height: 330px; width: 330px;
     border-radius: 50%;
     background: linear-gradient(#08ffe6,#fcd200);
-    transform: translate(-490px,-150);
-    left: 20px;
-    top: 50px;
+    transform: translate(100px,50px);
+    
 }
 
 .container::after {
@@ -34,27 +33,28 @@ body{
     height: 300px; width: 300px;
     border-radius: 50%;
     background: linear-gradient(#fcd200,#fc200e);
-    transform: translate(140px,170);
-    bottom: 70px;
+    transform: translate(30px,200px);
+    top: 100px;
     right: 50px;
 }
 
 .container .bola-1 {
     height: 30px; width: 30px;
     border-radius:50% ; background: #04f504;
-    transform: translate(-250px,200px);
+    transform: translate(350px,500px);
     position: absolute;
+
 }
 .container .bola-2 {
     height: 70px; width: 70px;
     border-radius:50% ; background: #08e2ff;
-    transform: translate(-10px,-220px);
+    transform: translate(510px,220px);
     position: absolute;
 }
 .container .bola-3 {
     height: 50px; width: 50px;
     border-radius:50% ; background: #ffc404;
-    transform: translate(250px,150px);
+    transform: translate(750px,150px);
     position: absolute;
 
 }
@@ -83,7 +83,7 @@ body{
     border: 2px solid rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(25px);
     box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
-    margin: 50px auto;
+    margin: auto;
 }
 
 .box nav {
@@ -101,8 +101,12 @@ nav .logo {
     margin-left: 20px;
 }
 
-nav .logo img{
-    height: 100px;
+nav .logo h1{
+    color: rgb(214, 172, 172);
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 .box nav ul li{
     display: inline-block;
@@ -112,8 +116,75 @@ nav .logo img{
     font-size: 13px;
     cursor: pointer;
     text-decoration: none;
+    
+    text-shadow: 2px 2px 3px rgba(146, 7, 7, 0.849);
 }
 .box nav ul li a:hover{
     color: #ffc404;
 }
+
+.container .box .contains {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+.container .box .contains .col-1 {
+  position: absolute;
+  margin-top:70px ;
+}
+.container .box .contains .col-1 h1 {
+  font-size: 75px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+.container .box .contains .col-1 h3 {
+  font-size: 35px;
+}
+.container .box .contains .col-1 p {
+  margin-top: 5px;
+}
+.container .box .contains .col-1 .button a {
+  padding:10px 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(247, 239, 239);
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s;
+}
+.container .box .contains .col-1 .button a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(143, 142, 142, 0.2);
+  }
+  
+  .container .box .contains .col-1 .button a:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 10px rgba(117, 111, 111, 0.2);
+  }
+.container .box .contains .col-1 .button {
+  margin-top: 50px;
+  
+}
+.container .box .contains .col-2 img {
+  width: 50%;
+  height: auto;
+  transform: translate(380px);
+  
+}
+span {
+color: #fc002e;
+font-size: 40px;
+}
+
+
+
+
+
 
