@@ -1,0 +1,119 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body{
+    background: #000;
+}
+
+.container {
+    height: 1021vh; width: 100%;
+    position: relative;
+    background: #000;
+}
+
+.container::before {
+    content:  '';
+    position: absolute;
+    height: 330px; width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#08ffe6,#fcd200);
+    transform: translate(-490px,-150);
+    left: 20px;
+    top: 50px;
+}
+
+.container::after {
+    content:  '';
+    position: absolute;
+    height: 300px; width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#fcd200,#fc200e);
+    transform: translate(140px,170);
+    bottom: 70px;
+    right: 50px;
+}
+
+.container .bola-1 {
+    height: 30px; width: 30px;
+    border-radius:50% ; background: #04f504;
+    transform: translate(-250px,200px);
+    position: absolute;
+}
+.container .bola-2 {
+    height: 70px; width: 70px;
+    border-radius:50% ; background: #08e2ff;
+    transform: translate(-10px,-220px);
+    position: absolute;
+}
+.container .bola-3 {
+    height: 50px; width: 50px;
+    border-radius:50% ; background: #ffc404;
+    transform: translate(250px,150px);
+    position: absolute;
+
+}
+
+.container .box {
+    height: 86vh; width: 75%;
+    padding: 0,20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+    top: 50px;
+}
+.container .box {
+    height: 86vh; width: 75%;
+    padding: 0,20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+    margin: 50px auto;
+}
+
+.box nav {
+    width: 95%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin: 15px auto;
+    
+}
+nav .logo {
+    width: 50%;
+    margin-left: 20px;
+}
+
+nav .logo img{
+    height: 100px;
+}
+.box nav ul li{
+    display: inline-block;
+    padding:  0 20px;
+}
+.box nav ul li a{
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.box nav ul li a:hover{
+    color: #ffc404;
+}
+
