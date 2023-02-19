@@ -15,42 +15,104 @@
 
     <!-- My Css -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link rel="stylesheet" href="assets/css/grid.css" />
+    <!-- My Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <!-- My Font  -->
-   
   </head>
   <body>
     <div class="container">
-      <div class="bola-1">cxcccsc</div>
-      <div class="bola-2">cscsc</div>
-      <div class="bola-3">cscsc</div>
-      <div class="box">
-        <nav>
-          <div class="logo">
-            <h1>!Ippams</h1>
-          </div>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+      <header class="header">
+        <a href="#" class="logo">
+            <h3>Ippams</h3>
+        </a>
+  
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#menu">Menu</a>
+          <a href="#products">Produk</a>
+          <a href="#review">Testimoni</a>
+          <a href="#contact">Kontak</a>
+          <a href="#blogs">Blog</a>
         </nav>
-        <div class="contains">
-          <div class="col-1">
-            <h1>Welcome</h1>
-            <h3>To Website <span>'</span>Ippams <span>'</span></h3>
-            <p>jangan lupa bahagia bersama dia yang selalu ada</p>
-            <div class="button">
-              <a href="">More Info</a>
-              <a href="">Contact Us</a>
+  
+        <div class="icons">
+          <div class="fas fa-search" id="search-btn"></div>
+          <div class="fas fa-shopping-cart" id="cart-btn"></div>
+          <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+  
+        <div class="search-form">
+          <input type="search" id="searchInput" placeholder="search here.." />
+        <label for="search-box" id="searchButton" class="fas fa-search"></label>
+          
+        </div>
+  
+        <div class="cart-items-container glass">
+          <div class="cart-item">
+            <span class="fas fa-times" onclick="close"></span>
+            <img src="assets/img/menu/americano.jpg" alt="" />
+            <div class="content">
+              <h3>cart item 01</h3>
+              <div class="price">IDR 250K/-</div>
             </div>
           </div>
-          <div class="col-2">
-            <img src="assets/media/img/icons (2).png" alt="">
+          <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="assets/img/menu/cappucino.jpg" alt="" />
+            <div class="content">
+              <h3>cart item 01</h3>
+              <div class="price">IDR 250K/-</div>
+            </div>
           </div>
+          <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="assets/img/menu/cold brew coffee.jpg" alt="" />
+            <div class="content">
+              <h3>cart item 01</h3>
+              <div class="price">IDR 250K/-</div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="assets/img/menu/frappé coffe.jpg" alt="" />
+            <div class="content">
+              <h3>cart item 01</h3>
+              <div class="price">IDR 250K/-</div>
+            </div>
+          </div>
+          <a href="" class="btn">checkout now</a>
+          
         </div>
+      </header>
+      <div class="box">
+        <section class="hero" id="hero">
+          <div
+            class="row">
+            <div class="content">
+              <h1>Welcome</h1>
+              <h3>To Website <span>'</span>Ippams <span>'</span></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet.
+              </p>
+              <button class="button">
+                <a href="">learn more</a>
+              </button>
+              <button class="button">
+                <a href="">learn more</a>
+              </button>
+            </div>
+            <div class="image">
+              <img src="https://img.freepik.com/premium-vector/meadow-with-grass-camping_169241-993.jpg" alt="coffe espresso" />
+            </div>
+          </div>
+        </section>
       </div>
     </div>
+   
   </body>
 </html>
